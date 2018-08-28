@@ -27,7 +27,7 @@ def main():
         # (Initial) nickname of the bot.
         nickname='piclink',
         # Text to respond with to a general !help command.
-        #short_help='I am a testing bot.',
+        short_help='This bot helps with links for our instant friends.',
         # Text to respond with to a specific !help command.
         long_help='I make links for instant people. Blame L(eidenfrost) if something goes wrong. Currently hosted by ASCII-art, so you can also blame him. Actually, just blame him. You can also !kill me :D',
         # Bot behavior be here.
