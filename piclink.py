@@ -34,26 +34,9 @@ def main():
         regexes={
             # Insert 'regex': response pairs here.
             # Keep this one in place.
-            r'i.imgur.com/[a-zA-Z0-9]+': instant,
-            r'i.imgur.com/[a-zA-Z0-9]+(\.png)\S': instant,
-            r'i.imgur.com/[a-zA-Z0-9]+(\.jpg)\S': instant,
-            r'i.imgur.com/[a-zA-Z0-9]+(\.gif)\S': instant,
-            r'i.imgur.com/[a-zA-Z0-9]+(\.mp4)\S': instant,
-            r'http://i.imgur.com/[a-zA-Z0-9]+': instant,
-            r'http://i.imgur.com/[a-zA-Z0-9]+(\.png)\S': instant,
-            r'http://i.imgur.com/[a-zA-Z0-9]+(\.jpg)\S': instant,
-            r'http://i.imgur.com/[a-zA-Z0-9]+(\.gif)\S': instant,
-            r'http://i.imgur.com/[a-zA-Z0-9]+(\.mp4)\S': instant,
-            r'https://i.imgur.com/[a-zA-Z0-9]+': instant,
-            r'https://i.imgur.com/[a-zA-Z0-9]+(\.png)\S': instant,
-            r'https://i.imgur.com/[a-zA-Z0-9]+(\.jpg)\S': instant,
-            r'https://i.imgur.com/[a-zA-Z0-9]+(\.gif)\S': instant,
-            r'https://i.imgur.com/[a-zA-Z0-9]+(\.mp4)\S': instant,
-            r'imgs.xkcd.com/comics/.+(\.png)': instant,
-            r'http://imgs.xkcd.com/comics/.+(\.png)': instant,
-            r'https://imgs.xkcd.com/comics/.+(\.png)': instant,
-            r'http://\S+':link,
-            r'https://\S+':link,
+            r'(https?://)?i.imgur.com/[a-zA-Z0-9]+': instant,
+            r'(https?://)?imgs.xkcd.com/comics/.+(\.png)': instant,
+            r'https?://\S+':link,
             r'www\.\S+':link,
             r'^!kill\s+@(\S+)\s*$': maybe_exit
         }
