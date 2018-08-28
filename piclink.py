@@ -33,11 +33,13 @@ def main():
         # Bot behavior be here.
         regexes={
             # Insert 'regex': response pairs here.
-            # Keep this one in place.
-            r'(https?://)?i.imgur.com/[a-zA-Z0-9]+': instant,
-            r'(https?://)?imgs.xkcd.com/comics/.+(\.png)': instant,
+            r'(https?://)?i\.imgur\.com/[a-zA-Z0-9]+': instant,
+            r'(https?://)?imgs\.xkcd\.com/comics/.+(\.png)': instant,
             r'https?://\S+':link,
             r'www\.\S+':link,
+            r'(https?://)?xkcd\.com/\d+\s?':link,
+#            r'\S+\.\S+?\/?\S+\s?':link,
+            # Keep this one in place.
             r'^!kill\s+@(\S+)\s*$': maybe_exit
         }
     )
